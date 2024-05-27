@@ -453,7 +453,10 @@ header {
 .promo_header {
     display: flex;
 }
-
+.promo_header h2 {
+    color: var(--colo-p1);
+    font-weight: 700;
+}
 .promo_item-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
