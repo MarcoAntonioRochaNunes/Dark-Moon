@@ -3,14 +3,14 @@
   <main>
     <div class="container_main">
       <div class="banner_primary">
-        <div class="banner-one_box">
+        <div class="banner-one_box overflow">
           <img src="assets/4044803.jpg" alt="Duna da Bahia">
         </div>
-        <div class="banner-two_box">
+        <div class="banner-two_box overflow">
           <div class="banner-two_box-content">
             <img src="assets/banner_discount_bdcc34e16b0f7284b736046335253201_1_20210521181951.webp" alt="Pieta">
           </div>
-          <div class="banner-two_box-content">
+          <div class="banner-two_box-content overflow">
             <img src="assets/5614042.jpg" alt="Pieta">
           </div>
         </div>
@@ -63,7 +63,7 @@
       <div class="sales_container">
         <div class="sales_container-header">
           <h2>Ofertas</h2>
-          <a href="#">Ver Mais</a>
+          <a class="btn_secondary f_14" href="#">Ver mais</a>
         </div>
         <div class="sales_container-items">
             @foreach ($ofertas as $item)
@@ -99,7 +99,7 @@
       </div>
 
       <div class="banner_lancamentos">
-        <div class="banner_lancamentos-box">
+        <div class="banner_lancamentos-box overflow">
           <img src="assets/9429828.jpg" alt="">
         </div>
       </div>
@@ -107,13 +107,13 @@
       <div class="sales_container">
         <div class="sales_container-header">
           <h2>Lançamentos</h2>
-          <a href="#">Ver Mais</a>
+          <a class="btn_secondary f_14" href="#">Ver Mais</a>
         </div>
         <div class="sales_container-items">
             @foreach ($lancamentos as $item)
             <div class="sales_item">
                 <div class="lanca sale_item-img">
-                <img src="assets/bca9bfbd5b51037ede170be27886ce3b.jpg" alt="">
+                    <img src="assets/bca9bfbd5b51037ede170be27886ce3b.jpg" alt="">
                 </div>
                 <h3>{{$item->nome}}</h3>
                 <div class="sales_icons">
@@ -161,7 +161,7 @@
         </div>
 
         <div class="template_1-img">
-          <div class="box_1">
+          <div class="box_1 overflow">
             <img src="assets/956acdba6cc620e21d3b30c8299d566a.jpg" alt="">
           </div>
           <div class="box_2">
@@ -185,25 +185,25 @@
         <div class="promo_box-items">
 
           <div class="promo_item-1">
-            <div class="sub_promo-1">
+            <div class="sub_promo-1 overflow">
               <img src="assets/3e06bf3996a3988834412bcbc90ef9e1.jpg" alt="">
             </div>
 
-            <div class="sub_promo-1">
+            <div class="sub_promo-1 overflow">
               <img src="assets/1711663235_banner-mobile-outono.webp" alt="">
             </div>
           </div>
 
-          <div class="promo_item-2">
+          <div class="promo_item-2 overflow">
             <img src="assets/Camisetas_Streetwear_e_Camiseta_Street_-_Loja_online_da_marca_KACE_2.webp" alt="">
           </div>
 
           <div class="promo_item-3">
-            <div class="first-sub sub_promo-3">
+            <div class="first-sub sub_promo-3 overflow">
               <img src="assets/FEED.png" alt="">
             </div>
 
-            <div class="sub_promo-3">
+            <div class="sub_promo-3 overflow">
               <img src="assets/Wholesale-Custom-New-Model-Screen-Print-T-Shirts-Men-100-Cotton-Black-Oversized-Streetwear-T-Shirts.webp" alt="">
             </div>
           </div>

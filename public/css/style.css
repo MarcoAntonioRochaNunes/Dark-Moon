@@ -35,6 +35,28 @@ body {
     color: inherit;
 }
 
+.btn_secondary {
+    background-color: var(--colo-p1);
+    color: var(--colo-white);
+    font-family: "Poppins", "sans-serif";
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    transition: ease 0.3s;
+}
+.f_14 {
+    font-size: 14px;
+}
+.overflow {
+    overflow: hidden;
+}
+.btn_secondary:hover {
+    background-color: var(--colo-white);
+    border: 2px solid var(--colo-p1);
+    color: var(--colo-p1);
+}
 img {
     display: block;
     object-fit: cover;
@@ -42,8 +64,11 @@ img {
     width: 100%;
     /* height: inherit; */
     height: 100%;
+    transition: transform 0.4s ease;
 }
-
+img:hover {
+    transform: scale(1.1);
+}
 main {
     /* background-color: blue; */
     min-height: 100vh;
@@ -210,7 +235,7 @@ header {
     max-width: 200px;
     max-height: 300px;
     height: 100%;
-
+    overflow: hidden;
     border-radius: 10px;
     background-color: var(--colo-c03);
     margin-bottom: 12px;
@@ -258,17 +283,6 @@ header {
     font-weight: 600;
 }
 
-.sales_container-header a {
-    font-size: 12px;
-    font-family: "Poppins", "sans-serif";
-    color: var(--colo-c01);
-    font-weight: 700;
-
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: var(--colo-p1);
-}
-
 /*---------------------------------FIM OFERTAS*/
 /*---------------------------------INICIO LANÇAMENTOS*/
 
@@ -276,14 +290,16 @@ header {
     margin-top: 60px;
     margin-bottom: 60px;
     height: 110px;
-    width: 100%;
+
     /* background-color: red; */
 }
 
 .banner_lancamentos-box {
-    height: 100%;
-    width: 100%;
+    position: relative; /* Adicionado */
+    height: 100px; /* Ajustado para fins de demonstração */
     border-radius: 10px;
+    width: 100%; /* Ajustado para fins de demonstração */
+    /* overflow: hidden; Adicionado para esconder a parte da imagem que exceder a div */
     background-color: var(--colo-c11);
 }
 
