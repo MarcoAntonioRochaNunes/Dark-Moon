@@ -559,3 +559,81 @@ footer {
 }
 
 /*---------------------------------FIM FOOTER*/
+.teste {
+    /* background-color: red; */
+    color: white;
+}
+
+.container_product {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+}
+
+.container_img {
+    max-width: 600px;
+    max-height: 615px;
+    height: 100%;
+    position: relative;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+.container_dados-payment {
+    max-width: 420px;
+    max-height: 480px;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+}
+.img_principal {
+    width: 450px;
+    height: 100%;
+    background-color: var(--colo-c03);
+    border-radius: 10px;
+}
+.img_secondary {
+    width: 115px;
+    height: 100%;
+}
+.img_Sn {
+    width: 100%;
+    height: 115px;
+    background-color: var(--colo-c03);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.img_principal::after {
+    content: "LANÇAMENTO";
+    font-size: 16px;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 600;
+    /* color: var(--colo-c01); */
+    padding: 4px 30px;
+    border-radius: 5px;
+    background-color: var(--colo-p1);
+    right: -10px;
+    top: 10px;
+    position: absolute;
+}
+.prodcut_header {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    color: var(--colo-c11);
+}
+.prodcut_header h1 {
+    grid-column: 1/3;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: "Poppins", "sans-serif";
+}
+.prodcut_header h4 {
+    font-family: "Poppins", "sans-serif";
+    font-size: 12px;
+    font-weight: 500;
+}
