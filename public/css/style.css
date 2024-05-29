@@ -587,7 +587,7 @@ footer {
     max-height: 480px;
     height: 100%;
     width: 100%;
-    background-color: green;
+    /* background-color: green; */
 }
 .img_principal {
     width: 450px;
@@ -636,4 +636,22 @@ footer {
     font-family: "Poppins", "sans-serif";
     font-size: 12px;
     font-weight: 500;
+}
+.product_payment {
+    display: grid;
+    gap: 10px;
+}
+.product_pay {
+}
+.product_payment {
+    display: flex;
+    color: var(--colo-c11);
+    flex-direction: column;
+}
+.box_payments {
+    display: flex;
+    justify-content: space-between;
+}
+.product_pay {
+    display: flex;
 }
