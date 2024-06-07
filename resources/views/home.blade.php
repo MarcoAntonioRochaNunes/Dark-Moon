@@ -3,14 +3,16 @@
   <main>
     <div class="container_main">
       <div class="banner_primary">
-        <div class="banner-one_box overflow">
-          <img src="assets/4044803.jpg" alt="Duna da Bahia">
-        </div>
+        <a href="#" class="banner-one_box_button1">
+            <div class="banner-one_box overflow animate">
+                <img src="assets/4044803.jpg" alt="Duna da Bahia">
+            </div>
+        </a>
         <div class="banner-two_box overflow">
-          <div class="banner-two_box-content">
+          <div class="banner-two_box-content overflow animate">
             <img src="assets/banner_discount_bdcc34e16b0f7284b736046335253201_1_20210521181951.webp" alt="Pieta">
           </div>
-          <div class="banner-two_box-content overflow">
+          <div class="banner-two_box-content overflow animate">
             <img src="assets/5614042.jpg" alt="Pieta">
           </div>
         </div>
@@ -100,7 +102,7 @@
 
       <div class="banner_lancamentos">
         <div class="banner_lancamentos-box overflow">
-          <img src="assets/9429828.jpg" alt="">
+          <img class="stopAni" src="assets/9429828.jpg" alt="">
         </div>
       </div>
 
@@ -144,12 +146,14 @@
         <h1>CATEGORIAS</h1>
         <div class="categories_box-items">
         @foreach ($categorias as $item)
-            <div class="category_item">
-            <div class="category-img">
-                <img src="assets/4044803.jpg" alt="">
-            </div>
-                <h4>{{$item->nome}}</h4>
-            </div>
+            <a href="#">
+                <div class="category_item">
+                    <div class="category-img">
+                        <img src="assets/4044803.jpg" alt="">
+                    </div>
+                    <h4>{{$item->nome}}</h4>
+                </div>
+            </a>
         @endforeach
         </div>
       </div>

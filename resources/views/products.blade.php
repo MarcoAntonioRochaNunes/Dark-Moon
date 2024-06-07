@@ -1,7 +1,7 @@
 @include('header')
 <main>
 
-    <div class="container_main teste">
+    <div class="container_main">
         <div class="container_product">
 
             <div class="container_img">
@@ -29,15 +29,15 @@
                     <h3>de <span>R$ 250,00</span> por</h3>
                     <div class="box_payments">
                         <div class="product_pay">
-                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="34" height="32" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.2211 20H4.91286C4.34641 20 3.86149 19.8042 3.4581 19.4125C3.05472 19.0208 2.85303 18.55 2.85303 18V6C2.85303 5.45 3.05472 4.97917 3.4581 4.5875C3.86149 4.19583 4.34641 4 4.91286 4H21.3916C21.958 4 22.4429 4.19583 22.8463 4.5875C23.2497 4.97917 23.4514 5.45 23.4514 6V12H20.6449L16.1905 16.325L13.2552 13.525L8.9038 17.75L11.2211 20ZM16.1905 22L11.8133 17.75L13.2552 16.35L16.1905 19.15L22.0095 13.5L23.4514 14.95L16.1905 22ZM4.91286 8V12H21.3916V8H4.91286Z" fill="#141414"/>
                             </svg>
                             <h2>R$ 150,00</h2>
                         </div>
                         <div class="product_pay-pix">
-                            <p>no <span>PIX <span>R$ 130,00</span></span></p>
-                            <span>-13%</span>
+                            <p>no <span>PIX <span class="pix_price">R$ 130,00</span></span></p>
                         </div>
+                        <span class="tag_pix">-13%</span>
                     </div>
                 </div>
             </div>
