@@ -64,9 +64,12 @@ img {
     width: 100%;
     /* height: inherit; */
     height: 100%;
+}
+
+.animate img {
     transition: transform 0.4s ease;
 }
-img:hover {
+.animate img:hover {
     transform: scale(1.1);
 }
 main {
@@ -139,12 +142,15 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-
+.banner-one_box_button1 {
+    grid-column: 1/3;
+}
 .banner-one_box {
     /* background-color: green; */
     border-radius: 10px;
-    grid-column: 1/3;
     margin-left: 0px;
+    grid-column: 1/3;
+
     height: 464px;
 }
 
@@ -558,11 +564,13 @@ footer {
     background-color: var(--colo-c11);
 }
 
-/*---------------------------------FIM FOOTER*/
-.teste {
-    /* background-color: red; */
-    color: white;
+.banner_principal {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    border-radius: 10px;
 }
+/*---------------------------------FIM FOOTER*/
 
 .container_product {
     display: flex;
@@ -643,12 +651,22 @@ footer {
     display: grid;
     gap: 10px;
 }
-
 .product_payment {
     display: flex;
     color: var(--colo-c11);
     flex-direction: column;
 }
+.product_payment h3 {
+    color: var(--colo-c04);
+    font-size: 16px;
+    font-weight: 400;
+    & span {
+        color: var(--colo-c05);
+        text-decoration: line-through;
+        font-weight: 600;
+    }
+}
+
 .box_payments {
     display: flex;
     justify-content: space-between;
@@ -656,6 +674,34 @@ footer {
 }
 .product_pay {
     display: flex;
+    align-items: center;
+}
+.product_pay h2 {
+    font-size: 32px;
+}
+.product_pay-pix p {
+    /* background-color: red; */
+    font-size: 14px;
+    font-weight: 500;
+}
+.product_pay-pix > p > span {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--colo-c05);
+}
+.pix_price {
+    color: var(--colo-c11);
+    font-weight: 700;
+}
+.tag_pix {
+    color: var(--colo-white);
+    background-color: var(--colo-c11);
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
 }
 .product_pay-pix {
     display: flex;
