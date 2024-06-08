@@ -271,7 +271,7 @@ header {
 
 .sales_item h2 {
     font-family: "Poppins", "sans-serif";
-    font-size: 16px;
+    font-size: 14px;
     color: var(--colo-c11);
     font-weight: 700;
 }
@@ -594,10 +594,12 @@ footer {
     height: 100%;
     background-color: var(--colo-c03);
     border-radius: 10px;
+    overflow: hidden;
 }
 .img_secondary {
     width: 115px;
     height: 100%;
+    /* background-color: red; */
 }
 .img_Sn {
     width: 100%;
@@ -641,8 +643,7 @@ footer {
     display: grid;
     gap: 10px;
 }
-.product_pay {
-}
+
 .product_payment {
     display: flex;
     color: var(--colo-c11);
@@ -651,7 +652,52 @@ footer {
 .box_payments {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .product_pay {
     display: flex;
+}
+.product_pay-pix {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+.product_pay-pix p {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Poppins", "sans-serif";
+    color: var(--colo-c11);
+}
+.product_pay-pix p > span {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--colo-c05);
+}
+.product_pay-pix p > span > span {
+    font-weight: 700;
+    color: var(--colo-c11);
+}
+.tag_promo {
+    background-color: var(--colo-c11);
+    color: var(--colo-white);
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    padding: 4px 20px;
+    border-radius: 5px;
+    right: 0;
+    bottom: -30px;
+}
+.text_payment {
+    margin-top: 30px;
+    font-family: "Poppins", "sans-serif";
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colo-c05);
+
+    line-height: 24px;
+}
+.text_payment p span {
+    font-weight: 600;
+    color: var(--colo-c11);
 }
